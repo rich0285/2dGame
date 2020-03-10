@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using URandom = UnityEngine.Random;
 using Random = System.Random;
 
 public class PlatformSpawner : MonoBehaviour
 {
-    public float mapLevel = 2;
+    public static float mapLevel = 2;
     public GameObject platform;
     private float randX;
     private Vector2 whereToSpawn;
@@ -20,8 +17,6 @@ public class PlatformSpawner : MonoBehaviour
 
     void Update()
     {
-     
-
         if (noLevel < mapLevel)
         {
             PlatformCreator();
@@ -73,9 +68,3 @@ public class PlatformSpawner : MonoBehaviour
         return number;
     }
 }
-
-
-
-
-
-
